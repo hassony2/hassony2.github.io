@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BodyNet: Volumetric Inference of 3D Human Body Shapes">
+    <meta name="author" content="WILLOW team">
+
+    <title>Learning joint reconstruction of hands and manipulated objects</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  <div class="container">
+      <div class="header">
+        <h3> <center> <b>Learning joint reconstruction of hands and manipulated objects</b> </center> </h3>
+      </div>
+
+      <center>
+	      <img src="obmanimages/teaser.png" title="" style="max-width:35%;vertical-align:top" /> 
+	      <!--  <img src="obmanimages/bodynet.gif" title="" style="max-width:25%;"/> -->
+      </center>
+
+      <div class="row">
+        <h3>People</h3>
+        <center>
+                <table style="width:70%">
+                <tr>
+			<td><a href="https://hassony2.github.io"><img id="image" src="photos/yana.png" width="60"></img> <br/> Yana <br /> Hasson</a></td>
+			<td><a href="http://www.di.ens.fr/~varol/"><img id="image" src="photos/gul.jpg" width="60"></img> <br/> G&uuml;l <br />Varol</a></td>
+			<td><a href="http://www.di.ens.fr/~varol/"><img id="image" src="photos/dimitris2.png" width="60"></img> <br/> Dimitrios <br />Tzionas</a></td>
+			<td><a href="http://www.di.ens.fr/~varol/"><img id="image" src="photos/igor.jpg" width="60"></img> <br/> Igor <br />Khalevatykh</a></td>
+			<td><a href="http://www.di.ens.fr/~laptev/"><img id="image" src="photos/michael.jpg" width="60"></img> <br/> Michael J.<br />Black</a></td>
+			<td><a href="http://www.di.ens.fr/~laptev/"><img id="image" src="photos/ivan.jpg" width="60"></img> <br/> Ivan <br />Laptev</a></td>
+			<td><a href="http://lear.inrialpes.fr/~schmid/"><img id="image" src="photos/cordelia.jpg" width="60"></img> <br/>Cordelia <br />Schmid</a></td>
+                </tr>
+                </table>
+        </center>
+      </div>
+
+      <div class="row">
+        <h3>Abstract</h3>
+        <p style="text-align: justify;">
+	Estimating hand-object manipulations is essential for interpreting and imitating human actions.
+	Previous work has made significant progress towards reconstruction of hand poses and object shapes in isolation.
+	Yet, reconstructing hands and objects during manipulation is a more challenging task due to significant occlusions of both the hand and object.
+	While presenting challenges, manipulations may also simplify the problem since the physics of contact restricts the space of valid hand-object configurations.
+	For example, during manipulation, the hand and object should be in contact but not interpenetrate.
+	In this work, we regularize the joint reconstruction of hands and objects with manipulation constraints.
+	We present an end-to-end learnable model that exploits a novel contact loss that favors physically plausible hand-object constellations.
+	Our approach improves grasp quality metrics over baselines, using RGB images as input.
+	To train and evaluate the model, we also propose a new large-scale synthetic dataset, ObMan, with hand-object manipulations.
+	We demonstrate the transferability of ObMan-trained models to real data.
+
+
+	</p>
+      <div class="row">
+        <h3>Paper</h3>
+
+  <ul class="list" style="list-style-type:square">
+    <li><a href="https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/499/obman.pdf">Paper</a></li>
+    <li><a href="https://ps.is.tuebingen.mpg.de/uploads_file/attachment/attachment/500/obman-supp.pdf">Supplemental material</a></li>
+    </ul>
+<!--
+    <li><a href="https://github.com/">Code</a></li>
+    <li><a href="bodynet_poster.pdf">Poster</a></li>
+    <li><a href="bodynet_presentation.pdf">Presentation</a></li>
+-->
+    
+      <h4>BibTeX</h4>
+                  <pre><tt>@INPROCEEDINGS{hasson19_obman,
+  title &nbsp&nbsp&nbsp&nbsp= {Learning joint reconstruction of hands and manipulated objects},
+  author &nbsp&nbsp = {Hasson, Yana and Varol, G{\"u}l and Tzionas, Dimitrios and Kalevatykh, Igor and Black, Michael J. and Laptev, Ivan and Schmid, Cordelia},
+  booktitle = {CVPR},
+  year &nbsp&nbsp&nbsp&nbsp&nbsp= {2019}
+}</tt></pre>
+                </div>
+      </div>
+    <div class="row">
+<!-- 
+    <h3>Qualitative Results</h3>
+    <center>
+     <iframe width="640" height="480"
+  src="https://www.youtube.com/embed/azHYS4TDPM0" allowfullscreen>
+</iframe> -->
+</center>
+      </div>
+
+      <div class="row">
+        <h3>Acknowledgements</h3>
+        <p>
+	This work was supported in part by ERC
+	grants ACTIVIA and ALLEGRO, the MSR-Inria joint lab, the Louis Vuitton ENS Chair on AI and the DGA project DRAAF. We thank Tsvetelina
+	Alexiadis, Jorge Marquez and Senya Polikovsky from MPI for help with scan acquisition, Joachim Tesch for the hand-object rendering, Matthieu Aubry and Thibault Groueix for advices on AtlasNet, David Fouhey for feedback.
+	MJB has received research gift funds from Intel, Nvidia, Adobe, Facebook, and Amazon.
+       </p>
+      </div>
+      <div class="row">
+        <h3>Copyright Notice</h3>
+        <p>The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
+      </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
