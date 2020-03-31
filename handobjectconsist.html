@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Leveraging Photometric Consistency over Time forSparsely Supervised Hand-Object Reconstruction">
+    <meta name="author" content="WILLOW team">
+
+    <title>Leveraging Photometric Consistency over Time forSparsely Supervised Hand-Object Reconstruction</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+  <div class="container">
+      <div class="header">
+        <h3> <center> <b>Leveraging Photometric Consistency over Time forSparsely Supervised Hand-Object Reconstruction</b> </center> </h3>
+      </div>
+
+      <center>
+	      <img src="handobjectconsistimages/teaser.png" title="" style="max-width:35%;vertical-align:top" /> 
+      </center>
+
+      <div class="row">
+        <h3>People</h3>
+        <center>
+                <table style="width:70%">
+                <tr>
+			<td><a href="https://hassony2.github.io"><img id="image" src="photos/yana.png" width="60"></img> <br/> Yana <br /> Hasson</a></td>
+			<td><a href="https://btekin.github.io/"><img id="image" src="photo/bugra_tekin.jpeg" width="60"></img> <br/> Bugra <br />Tekin</a></td>
+			<td><a href="https://www.microsoft.com/en-us/research/people/febogo/"><img id="image" src="photos/federica_bogo.jpg" width="60"></img> <br/>Federica <br />Bogo</a></td>
+			<td><a href="http://www.di.ens.fr/~laptev/"><img id="image" src="photos/ivan.jpg" width="60"></img> <br/> Ivan <br />Laptev</a></td>
+			<td><a href="https://www.microsoft.com/en-us/research/people/mapoll/"><img id="image" src="photos/marc_pollefeys.jpg" width="60"></img> <br> Marc <br/> Pollefeys</a></td>
+			<td><a href="http://lear.inrialpes.fr/~schmid/"><img id="image" src="photos/cordelia.jpg" width="60"></img> <br/>Cordelia <br />Schmid</a></td>
+                </tr>
+                </table>
+        </center>
+      </div>
+
+      <div class="row">
+        <h3>Abstract</h3>
+        <p style="text-align: justify;">
+	Modeling hand-object manipulations is essential for understanding how humans interact with their environment.
+	While of practical importance, estimating the pose of hands and objects during interactions is challenging due to the large mutual occlusions that occur during manipulation.
+	Recent efforts have been directed towards fully-supervised methods that require large amounts of labeled training samples. Collecting 3D ground-truth data for hand-object interactions, however, is costly, tedious, and error-prone. To overcome this challenge we present a method to leverage photometric consistency across time when annotations are only available for a sparse subset of frames in a video.
+	Our model is trained end-to-end on color images to jointly reconstruct hands and objects in 3D by inferring their poses.
+	Given our estimated reconstructions, we differentiably render the optical flow between pairs of adjacent images and use it within the network to warp one frame to another.
+	We then apply a self-supervised photometric loss that relies on the visual consistency between nearby images.
+	We achieve state-of-the-art results on 3D hand-object reconstruction benchmarks and demonstrate that our approach allows us to improve the pose estimation accuracy by leveraging information from neighboring frames in low-data regimes.
+	</p>
+      <div class="row">
+      <h3>Paper </h3>
+
+  <ul class="list" style="list-style-type:square">
+    <li><a href="">Paper [Coming soon]</a></li>
+    <!-- <li><a href="https://arxiv.org/abs/1904.05767">Paper</a></li> -->
+  </ul>
+
+      <h3> Code </h3>
+
+  <ul class="list" style="list-style-type:square">
+	<li>[Coming soon !]</li>
+    </ul>
+<!--
+    <li><a href="bodynet_poster.pdf">Poster</a></li>
+    <li><a href="bodynet_presentation.pdf">Presentation</a></li>
+-->
+    
+      <h4>BibTeX</h4>
+                  <pre><tt>@INPROCEEDINGS{hasson20_handobjectconsist,
+  title &nbsp&nbsp&nbsp&nbsp= {Leveraging Photometric Consistency over Time forSparsely Supervised Hand-Object Reconstruction},
+  author &nbsp&nbsp = {Hasson, Yana and Tekin, Bugra and Bogo, Federica and Laptev, Ivan and Pollefeys, Marc and Schmid, Cordelia},
+  booktitle = {CVPR},
+  year &nbsp&nbsp&nbsp&nbsp&nbsp= {2020}
+}</tt></pre>
+                </div>
+      </div>
+      <!--
+    <div class="row">
+    <h3> Video </h3>
+    <center>
+	    <video width="780" height="440" controls>
+  <source src="videos/ObMan.webm" type='video/webm'>
+</video>
+</center>
+      </div>
+
+      <div class="row">
+-->
+        <h3>Acknowledgements</h3>
+        <p>
+	This  work  was  supported  by  the  MSR-Inria joint lab and the French government under management of Agence Nationale de la Recherche as part of the ”Investissements d’avenir” program, reference  ANR-19-P3IA-0001  (PRAIRIE  3IA  Institute).
+	<p>
+	</p>
+    	Yana  Hasson thanks Mihai Dusmanu,  Yann Labbé and Thomas Eboli for helpful discussions and feedback.
+       </p>
+      </div>
+      <div class="row">
+        <h3>Copyright Notice</h3>
+        <p>The documents contained in these directories are included by the contributing authors as a means to ensure timely dissemination of scholarly and technical work on a non-commercial basis. Copyright and all rights therein are maintained by the authors or by other copyright holders, notwithstanding that they have offered their works here electronically. It is understood that all persons copying this information will adhere to the terms and constraints invoked by each author's copyright.</p>
+      </div>
+      </div>
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  </body>
+</html>
