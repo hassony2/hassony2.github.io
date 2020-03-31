@@ -77,13 +77,32 @@
             <h2>News</h2>
           </div>
         </div>
+	<!-- Photometric consistency accepted -->
+        <div class="row">
+          <div class="col-sm-1 col-md-1">
+            <span class="label label-success">03 / 2020</span>
+          </div>
+          <div class="col-sm-11 col-md-11">
+            CVPR'20 paper accepted! More details coming soon.
+          </div>
+        </div>
+	<!-- -->
+        <div class="row">
+          <div class="col-sm-1 col-md-1">
+            <span class="label label-primary">10 / 2019</span>
+          </div>
+          <div class="col-sm-11 col-md-11">
+		  I presented at the <a href="https://www.microsoft.com/en-us/research/event/mixed-reality-and-ai-zurich-lab-launch/#!agenda"> Mixed Reality & AI Zurich Lab Workshop</a> during my internship at <a href="https://www.microsoft.com">Microsoft</a>.
+          </div>
+        </div>
 
+	<!-- Obman accepted -->
         <div class="row">
           <div class="col-sm-1 col-md-1">
             <span class="label label-success">02 / 2019</span>
           </div>
           <div class="col-sm-11 col-md-11">
-            CVPR'19 paper accepted on hand-object reconstruction! More details coming soon.
+            CVPR'19 paper accepted on hand-object reconstruction!
           </div>
         </div>
         <div style="height:3px;"></div>
@@ -146,9 +165,46 @@
               See <a href="https://scholar.google.fr/citations?user=ceSzF9YAAAAJ&hl=en">Google Scholar profile</a> for a full list of publications.
             </p>
 	    -->
+<!-- Photometric consistency, CVPR'20 -->
+    <div class="row">
+	<div class="col-xs-10 col-sm-4 col-md-4">
+		<a class="thumbnail">
+		<img src="./img/teaser_cvpr20.png" alt="Leveraging Phtometric Consistency over Time for Sparsely Supervised Hand-Object Reconstruction">
+                </a>
+	</div>
+      <div class="col-xs-12 col-sm-8 col-md-8">
+        <strong>Leveraging Photometric Consistency over Time for Sparsely Supervised Hand-Object Reconstruction</strong> </br>
+	<u>Yana Hasson</u>, Bugra Tekin, Federica Bogo, Ivan Laptev, Marc Pollefeys, and Cordelia Schmid<br>
+	<em>CVPR, </em> 2019.<br>
+	<!--<a href=""> <button type="button" class="btn btn-primary btn-xs"> pdf </button> </a> -->
+	<a href="obman.html"><button type="button" class="btn btn-primary btn-xs">project page</button></a>
+	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex6">bibtex</button>
+	<div id="bibtex6" class="collapse">
+	  <pre><tt>@INPROCEEDINGS{hasson20_handobjectconsist,
+		  title &nbsp&nbsp&nbsp&nbsp= {Leveraging Photometric Consistency over Time for Sparsely Supervised Hand-Object Reconstruction},
+		  author &nbsp&nbsp = {Hasson, Yana and Tekin, Bugra and Bogo, Federica and Laptev, Ivan and Pollefeys, Marc and Schmid, Cordelia},
+		  booktitle = {CVPR},
+		  year &nbsp&nbsp&nbsp&nbsp&nbsp= {2020}
+	}</tt></pre>
+	</div>
+	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract6">abstract</button>
+	<div id="abstract6" class="collapse">
+        <p style="text-align: justify;">
+	Modeling hand-object manipulations is essential for understanding how humans interact with their environment.
+	While of practical importance, estimating the pose of hands and objects during interactions is challenging due to the large mutual occlusions that occur during manipulation.
+	Recent efforts have been directed towards fully-supervised methods that require large amounts of labeled training samples. Collecting 3D ground-truth data for hand-object interactions, however, is costly, tedious, and error-prone. To overcome this challenge we present a method to leverage photometric consistency across time when annotations are only available for a sparse subset of frames in a video.
+	Our model is trained end-to-end on color images to jointly reconstruct hands and objects in 3D by inferring their poses.
+	Given our estimated reconstructions, we differentiably render the optical flow between pairs of adjacent images and use it within the network to warp one frame to another.
+	We then apply a self-supervised photometric loss that relies on the visual consistency between nearby images.
+	We achieve state-of-the-art results on 3D hand-object reconstruction benchmarks and demonstrate that our approach allows us to improve the pose estimation accuracy by leveraging information from neighboring frames in low-data regimes.
+	</p>
+        </div>
+      </div>
+    </div>
+<!-- end of CVPR'20 -->
 
 
-<!-- ObMan -->
+<!-- ObMan, CVPR'19 -->
             <div class="row">
               <div class="col-xs-10 col-sm-4 col-md-4">
                 <a class="thumbnail">
