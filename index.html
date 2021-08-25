@@ -79,6 +79,25 @@
           </div>
         </div>
         <!-- End news header -->
+	      
+<!-- CEMRACS -->
+        <div class="row">
+          <div class="col-sm-1 col-md-1">
+            <span class="label label-primary">09 / 2020</span>
+          </div>
+          <div class="col-sm-11 col-md-11">
+		I am attending the 2021 <a href="http://smai.emath.fr/cemracs/cemracs21/projects_list.html">CEMRACS</a> summer program on Data Assimilation and Reduced Modeling for High Dimensional Problems in Luminy.  
+	  </div>
+        </div>
+<!-- homan -->
+        <div class="row">
+          <div class="col-sm-1 col-md-1">
+            <span class="label label-primary">09 / 2020</span>
+          </div>
+          <div class="col-sm-11 col-md-11">
+		  New <a href="https://arxiv.org/abs/2108.07044">paper</a> on arXiv on <a href="https://hassony2.github.io/homan.html">joint hand-object fitting</a> to noisy evidence in short RGB clips.
+	  </div>
+        </div>
 <!-- Robotics talk 2020 -->
         <div class="row">
           <div class="col-sm-1 col-md-1">
@@ -207,6 +226,46 @@
         <div class="row"  id="research" style="padding-top:60px; margin-top:-60px;">
           <div class="col-md-12">
             <h2>Research</h2>
+		  
+		  
+
+<!-- HOMAN 2021 -->
+    <div class="row">
+	<div class="col-xs-10 col-sm-4 col-md-4">
+		<a class="thumbnail">
+		<img src="./img/teaser_cvpr20.png" alt="Leveraging Phtometric Consistency over Time for Sparsely Supervised Hand-Object Reconstruction">
+                </a>
+	</div>
+      <div class="col-xs-12 col-sm-8 col-md-8">
+        <strong>Towards unconstrained joint hand-object reconstruction from RGB videos</strong> </br>
+	<u>Yana Hasson</u>, Gül Varol, Ivan Laptev and Cordelia Schmid<br>
+	<em>arXiv, </em> 2021.<br>
+	<!--<a href=""> <button type="button" class="btn btn-primary btn-xs"> pdf </button> </a> -->
+	<a href="homan.html"><button type="button" class="btn btn-primary btn-xs">project page</button></a>
+	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#bibtex6">bibtex</button>
+	<div id="bibtex6" class="collapse">
+	  <pre><tt>@article{{hasson20_homan,
+		  title &nbsp&nbsp&nbsp&nbsp= {Towards unconstrained joint hand-object reconstruction from RGB videos},
+		  author &nbsp&nbsp = {Hasson, Yana and Varol, G"{u}l and Laptev, Ivan and Schmid, Cordelia},
+                  journal &nbsp={arXiv preprint arXiv:2108.07044},
+		  year &nbsp&nbsp&nbsp&nbsp&nbsp= {2021}
+	}</tt></pre>
+	</div>
+	<button type="button" class="btn btn-primary btn-xs" data-toggle="collapse" data-target="#abstract6">abstract</button>
+	<div id="abstract6" class="collapse">
+        <p style="text-align: justify;">
+	Our work aims to obtain 3D reconstruction of hands and manipulated objects from monocular videos.
+		Reconstructing hand-object manipulations holds a great potential for robotics and learning from human demonstrations.
+		The supervised learning approach to this problem, however, requires 3D supervision and remains limited to constrained laboratory settings and simulators for which 3D ground truth is available.
+		In this paper we first propose a learning-free fitting approach for hand-object reconstruction which can seamlessly handle two-hand object interactions.
+		Our method relies on cues obtained with common methods for object detection, hand pose estimation and instance segmentation.
+		We quantitatively evaluate our approach and show that it can be applied to datasets with varying levels of difficulty for which training data is unavailable.
+	</p>
+        </div>
+      </div>
+    </div>
+<!-- end of HOMAN  -->
+	  
 <!-- Low bandwidth -->
     <div class="row">
 	<div class="col-xs-10 col-sm-4 col-md-4">
@@ -408,6 +467,17 @@ using RGB images as input.
 			</br>
 			Code to render the <a href="https://www.di.ens.fr/willow/research/obman/data/"> ObMan dataset </a>
 
+		    </div>
+
+	    </div>
+
+	    <div class="row"  style="padding-top:20px; margin-top:0px;">
+		    <div class="col-xs-10 col-sm-4 col-md-4 card-body card">
+		    <a href="https://github.com/hassony2/homan"> obman_train </a> 
+			</br>
+		    <a class="github-button" href="https://github.com/hassony2/homan" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star hassony2/homan on GitHub">Star</a>
+			</br>
+			 Hand-Object joint fitting to noisy evidence
 		    </div>
 
 	    </div>
